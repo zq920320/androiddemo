@@ -55,7 +55,14 @@
         <meta-data
             android:name="groupid"
             android:value="" />
-
+		 <receiver
+            android:name="com.zq.zqtest.touchuan"
+             >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.Z3ICRicOFS7BI0VeBLD1T8" />
+                <!-- com.igexin.sdk.action.第三方的appId -->
+            </intent-filter>
+        </receiver>
         <activity
             android:name="com.igexin.sdk.SdkActivity"
             android:excludeFromRecents="true"
